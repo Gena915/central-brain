@@ -1,0 +1,8 @@
+# Normalize line endings so the repo works on every OS.
+* text=auto eol=lf
+
+# Shell scripts MUST be LF — CRLF breaks the shebang on macOS/Linux.
+*.sh text eol=lf
+
+# PowerShell is happy with CRLF on Windows.
+*.ps1 text eol=crlf

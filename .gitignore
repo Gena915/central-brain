@@ -1,0 +1,17 @@
+# Per-user install config (written by the installer; never commit it — it also gates setup)
+.central-brain/
+
+# Secrets: anything under a .secrets/ folder, anywhere
+**/.secrets/
+*.env
+.env
+
+# A brain seeded next to the repo (if the user chose ../my-brain, it's outside; this covers
+# the case where someone points it inside the repo by mistake)
+/my-brain/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.bak
+node_modules/
